@@ -1,0 +1,92 @@
+// Place your key bindings in this file to override the defaults
+[
+    // Toggle between terminal and editor focus
+    {
+        "key": "cmd+`",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "cmd+`",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+`",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+alt+cmd+c",
+        "command": "workbench.panel.chat.view.copilot.focus",
+        "when": "!inEditorsPicker && !inQuickOpen"
+    },
+    {
+        "key": "cmd+n n",
+        "command": "explorer.newFile"
+    },
+    {
+        "key": "cmd+n f",
+        "command": "explorer.newFolder"
+    },
+    {
+        "key": "/",
+        "command": "list.find",
+        "when": "listFocus && listSupportsFind"
+    },
+    {
+        "key": "f3",
+        "command": "-list.find",
+        "when": "listFocus && listSupportsFind"
+    },
+    {
+        "key": "shift+/",
+        "command": "list.toggleKeyboardNavigation",
+        "when": "listFocus && listSupportsKeyboardNavigation && !inputFocus"
+    },
+    {
+        "key": "/",
+        "command": "-list.toggleKeyboardNavigation",
+        "when": "listFocus && listSupportsKeyboardNavigation && !inputFocus"
+    },
+    {
+        "key": "shift+cmd+w",
+        "command": "-workbench.action.closeWindow"
+    },
+    {
+        "key": "ctrl+cmd+r",
+        "command": "sqlite.runDocumentQuery",
+        "when": "editorLangId =~ /(sql|sqlite)/"
+    },
+    {
+        "key": "shift+cmd+q",
+        "command": "-sqlite.runDocumentQuery",
+        "when": "editorLangId =~ /(sql|sqlite)/"
+    },
+    {
+        "key": "cmd+j a",
+        "command": "jupyter.notebookeditor.addcellbelow"
+    },
+    {
+        "key": "ctrl+; s",
+        "command": "-jupyter.insertCellBelowPosition",
+        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.hascodecells && !jupyter.webExtension && !notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+; s",
+        "command": "jupyter.selectCell",
+        "when": "editorTextFocus && jupyter.hascodecells && !jupyter.webExtension && !notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+shift+alt+\\",
+        "command": "-jupyter.selectCell",
+        "when": "editorTextFocus && jupyter.hascodecells && !jupyter.webExtension && !notebookEditorFocused"
+    },
+    {
+        "key": "cmd+j cmd+j",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "cmd+j",
+        "command": "-workbench.action.togglePanel"
+    }
+]

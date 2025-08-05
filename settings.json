@@ -1,0 +1,40 @@
+{
+    "files.autoSave": "afterDelay",
+    "git.autofetch": true,
+    "makefile.configureOnOpen": false,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "editor.lineNumbers": "relative",
+    "terminal.integrated.scrollback": 10000,
+    "githubPullRequests.createOnPublishBranch": "never",
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true
+    },
+    "workbench.list.defaultFindMode": "highlight",
+    "workbench.list.typeNavigationMode": "automatic",
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.rightClickBehavior": "paste",
+    "debug.onTaskErrors": "abort",
+    "explorer.confirmDelete": false,
+    "notebook.lineNumbers": "on",
+    "git.openRepositoryInParentFolders": "never",
+    "githubPullRequests.pullBranch": "never",
+    "editor.rulers": [
+        100
+    ],
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "python.languageServer": "Pylance",
+    "python.analysis.nodeExecutable": "auto",
+    "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never"
+}
